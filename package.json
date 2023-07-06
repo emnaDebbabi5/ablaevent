@@ -2,7 +2,7 @@
     "name": "ablaevent",
     "version": "1.69.0",
     "description": "ablaevent allows you to automatically capture usage and send events to PostHog.",
-    "repository": "https://github.com/PostHog/posthog-js",
+    "repository": "https://github.com/emnaDebbabi5/ablaevent",
     "author": "hey@posthog.com",
     "license": "MIT",
     "scripts": {
