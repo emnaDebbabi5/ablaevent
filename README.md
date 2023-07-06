@@ -1,6 +1,6 @@
 # PostHog Browser JS Library
 
-[![npm package](https://img.shields.io/npm/v/posthog-js?style=flat-square)](https://www.npmjs.com/package/posthog-js)
+[![npm package](https://img.shields.io/npm/v/ablaevent?style=flat-square)](https://www.npmjs.com/package/ablaevent)
 [![MIT License](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 For information on using this library in your app, [see PostHog Docs](https://posthog.com/docs/libraries/js).  
@@ -16,7 +16,7 @@ Cypress: run `yarn serve` to have a test server running and separately `yarn cyp
 Testing on IE11 requires a bit more setup. TestCafe tests will use the
 playground application to test the locally built array.full.js bundle. It will
 also verify that the events emitted during the testing of playground are loaded
-into the PostHog app. By default it uses https://app.posthog.com and the
+into the PostHog app. By default it uses https://e.abla.io and the
 project with ID 11213. See the testcafe tests to see how to override these if
 needed. For PostHog internal users ask @benjackwhite or @hazzadous to invite you
 to the Project. You'll need to set `POSTHOG_API_KEY` to your personal API key, and
@@ -34,7 +34,7 @@ After all this, you'll be able to run through the below steps:
 
 ### Running local create react app example
 
-You can use the create react app setup in `playground/nextjs` to test posthog-js as an npm module in a Nextjs application.
+You can use the create react app setup in `playground/nextjs` to test ablaevent as an npm module in a Nextjs application.
 
 1. Run `posthog` locally on port 8000 (`DEBUG=1 TEST=1 ./bin/start`).
 2. Run `python manage.py setup_dev --no-data` on posthog repo, which sets up a demo account.
@@ -49,13 +49,13 @@ You can use the create react app setup in `playground/nextjs` to test posthog-js
 
 ## Developing together with another project
 
-Install Yalc to link a local version of `posthog-js` in another JS project: `npm install -g yalc` 
+Install Yalc to link a local version of `ablaevent` in another JS project: `npm install -g yalc` 
 
 #### Run this to link the local version
 
-- In the `posthog-js` directory: `yalc publish`
-- In the other directory: `yalc add posthog-js`, then install dependencies  
-  (for `posthog` this means: `yalc add posthog-js && pnpm i && pnpm copy-scripts`)
+- In the `ablaevent` directory: `yalc publish`
+- In the other directory: `yalc add ablaevent`, then install dependencies  
+  (for `posthog` this means: `yalc add ablaevent && pnpm i && pnpm copy-scripts`)
 
 #### Run this to update the linked local version
 
@@ -64,8 +64,8 @@ Install Yalc to link a local version of `posthog-js` in another JS project: `npm
 
 #### Run this to unlink the local version
 
-- In the other directory: `yalc remove posthog-js`, then install dependencies  
-  (for `posthog` this means: `yalc remove posthog-js && pnpm i && pnpm copy-scripts`)
+- In the other directory: `yalc remove ablaevent`, then install dependencies  
+  (for `posthog` this means: `yalc remove ablaevent && pnpm i && pnpm copy-scripts`)
 
 ## Releasing a new version
 
@@ -77,7 +77,7 @@ If you want to release a new version without a PR (e.g. because you forgot to us
 
 To release an alpha or beta version, you'll need to use the CLI locally:
 
-1. Make sure you're a collaborator on `posthog-js` in npm ([check here](https://www.npmjs.com/package/posthog-js)).
+1. Make sure you're a collaborator on `ablaevent` in npm ([check here](https://www.npmjs.com/package/ablaevent)).
 2. Make sure you're logged into the npm CLI (`npm login`).
 3. Check out your work-in-progress branch (do not release an alpha/beta from `master`).
 4. Run the following commands, using the same bump level (major/minor/patch) as your PR:
